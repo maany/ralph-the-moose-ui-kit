@@ -6,6 +6,7 @@ import {
   BalanceCard,
   Button,
   DropdownTrigger,
+  Header,
   IconNetworkBase,
   InputAssetAmount,
   TextButton,
@@ -69,7 +70,7 @@ function App() {
         fee={2}
         icon={<RalphLogo variant="icon" />}
       />
-      <DropdownTrigger
+      {/* <DropdownTrigger
         title="Dropdown Trigger"
         variant="small"
         expanded={false}
@@ -82,6 +83,7 @@ function App() {
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
+        <Header />  
       </div>
       <h1>Vite + React</h1>
       <div className="card">
@@ -94,8 +96,8 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
-    </>
+      </p> */}
+    </div> 
   );
 }
 
