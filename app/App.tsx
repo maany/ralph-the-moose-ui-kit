@@ -1,13 +1,7 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import {
   BalanceCard,
   Button,
-  DropdownTrigger,
-  Header,
-  IconNetworkBase,
   InputAssetAmount,
   TextButton,
   UnwrapCard,
@@ -15,11 +9,10 @@ import {
   WrapCard,
 } from "../lib";
 import { RalphLogo } from "@/components/ralph-logo";
-import { signal } from "@preact/signals-react";
 import { NavLink } from "@/components/nav-link";
+import { signal } from "@preact/signals-react";
 
 function App() {
-  const [count, setCount] = useState(0);
   const amount = signal(0);
   const amountToUnwrap = signal(0);
   const connectButton = <Button variant="primary" label="Connect Wallet" />;
